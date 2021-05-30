@@ -1,0 +1,38 @@
+1. Download Jenkins war file from below site
+#https://updates.jenkins-ci.org/download/war/
+
+Keep above file in "C" or "D" drive
+Open Command Prompt and reach to the jenkins war file
+
+And run this command - "java -jar jenkins.war"
+
+open browser and type "http://localhost:8080"
+
+After account setup on jenkins
+Login to jenkins
+Click on New Items and find Maven Project
+
+If Maven Project is not available, download from Manage Jenkins--> Manage Plugins
+
+Repeat step 13
+Enter Project name and select Maven and click on OK
+
+Scroll down on page and click on the "tool configuration" in maven section
+
+Add maven name there--> APPly & SAVE
+
+ADD Pom.xml file location of your system
+
+Make sure jdk in your project and in Jenkins should be same. JDK path can be setup by 
+
+Use of maven compiler plugin-
+	<plugin>
+		<groupId>org.apache.maven.plugins</groupId>
+		<artifactId>maven-compiler-plugin</artifactId>
+		<version>3.8.1</version>
+			<configuration>
+				<source>${jdk.level}</source>
+				<target>${jdk.level}</target>
+			</configuration>
+	 </plugin>
+pass your textng.xml file in pom.xml file by surefire plugin
