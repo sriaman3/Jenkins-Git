@@ -30,7 +30,7 @@ public class JenkinsTest {
 	
 	@Test
 	public void submit() {
-		driver.findElement(By.xpath("//*[@id='submit1']")).click();
+		driver.findElement(By.xpath("//*[@id='submit']")).click();
 	}
 
 }

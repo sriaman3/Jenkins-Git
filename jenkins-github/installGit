@@ -1,0 +1,14 @@
+Go to market place
+download egit 
+Click on Window-> Show view-> Other -> Select Git Repo -> Open
+
+Right click on project-> Team -> Share Project -> Create -> Browse New Repo location
+
+Commit your code
+Create new Repo on Github
+Copy clone URL
+
+Right click on Project in eclipse
+Team-> Push Branch Master -> Paste URL in URI field
+Give your username and password
+Click on Next and finish
