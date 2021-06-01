@@ -12,10 +12,12 @@ public class JenkinsTest {
 	public static WebDriver driver;
 	
 	@BeforeTest
-	public void init() {
+	public void init() throws InterruptedException {
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		driver.get("https://demoqa.com/text-box");
+		driver.manage().window().maximize();
+		Thread.sleep(500);
 	}
 	
 	@Test
